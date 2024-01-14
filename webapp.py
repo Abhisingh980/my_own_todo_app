@@ -12,7 +12,8 @@ def add_todo():
 
 st.title("My To Do App")
 st.subheader("this is my todo app")
-st.write("this is use to productivity")
+st.write("<h1>this is use to <b colour='red'>productivity</b></h1>",
+         unsafe_allow_html=True)
 
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
